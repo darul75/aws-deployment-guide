@@ -160,7 +160,7 @@ where igw-78362e1a is Internet Gateway id, create one if not existing yet.
 | Destination   | Target        |
 | ------------- |:-------------:|
 | 10.0.0.0/16   | local         |
-| 0.0.0.0/0     | igw-5bb52530 |
+| 0.0.0.0/0     | eni-9a3e8ded  |
 
 where eni-9a3e8ded is Network Interface (EC2) id, corresponding to NAT instance ENI. You can specify id of your NAT instance, aws will find network interface for you (ENI).
 
