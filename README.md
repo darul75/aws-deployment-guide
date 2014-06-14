@@ -94,7 +94,7 @@ AWS will generate a technical ID for it, let's says: sg-22222222
 |-------------|:-------------:| -------------:|
 | TCP   | 27017 | sg-33333333 |
 
-where sg-33333333 group policy of DBServer security group
+where sg-33333333 group policy of DBServer security group, 27017 MongoDB usual port.
 
 ## DBServer
 
@@ -109,7 +109,7 @@ AWS will generate a technical ID for it, let's says: sg-33333333
 | SSH   | 22 | 0.0.0.0/0 |
 | TCP   | 27017 | sg-22222222 |
 
-where sg-22222222 group policy of WebServer
+where sg-22222222 group policy of WebServer, 27017 MongoDB usual port.
 
 ### Outbounds rules
 
