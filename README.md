@@ -27,6 +27,7 @@ A collection of best practice to deploy with Amazon AWS services.
 - [Links](#links)
  - [vpc](#vpc-1)
  - [load balancing](#load-balancing)
+ - [mongodb](#mongodb)
 
 # Amazon services
 
@@ -294,7 +295,6 @@ http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo-vpc-rds.html
 
 http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/TerminologyandKeyConcepts.html#request-routing
 
-
-MongoDB with aws
+## mongodb
 
 http://docs.mongodb.org/ecosystem/platforms/amazon-ec2/
