@@ -41,13 +41,15 @@ First we will create your security rules, you will update it in future again but
 
 Here is what you will get at the end.
 
+Main difference I have made is to divide private zone with 2 CIDR, one for webservers, one for database servers.
+
 # Security Groups
 
 In following example, the main parts of your infrastructure are:
 
-* `public`: a public zone providing a door to enter your application, exclusively reserved for HTTP access.
-* `webserver`: a private zone hosting your webserver, you may use several for load balancing in case of high charge (scalability).
-* `dbserver`: a private zone hosting your database servers application.
+* `public`: a public zone providing a door to enter your application, exclusively reserved for HTTP access (NAT instance and some amazon load balancers).
+* `webserver`: a private zone hosting your webserver instances, you may use several for load balancing in case of high charge (scalability).
+* `dbserver`: a private zone hosting your database servers application instances.
 
 Let's create "Security Groups", use EC2 console view to create it.
 
