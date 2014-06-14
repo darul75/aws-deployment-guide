@@ -46,7 +46,7 @@ First we will create your security rules, you will update it in future again but
 
 Here is what you will get at the end.
 
-Main difference I have made is to divide private zone with 2 CIDR, one for webservers, one for database servers.
+Main difference I have made is to divide private zone with 2 [CIDR](http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing), one for webservers, one for database servers.
 
 # Security Groups
 
@@ -122,7 +122,7 @@ where sg-22222222 group policy of WebServer, 27017 MongoDB usual port.
 
 # VPC
 
-Go to VPC AWS Service zone and create a new one. Wizard will let you create a Public and Private zone with 2 subnets, take inspiration from these tables below, in order to create a third one at the end.
+Go to VPC AWS Service zone and create a new one. Wizard will let you create a Public and Private zone with 2 [subnets](http://en.wikipedia.org/wiki/Subnetwork), take inspiration from these tables below, in order to create a third one at the end.
 
 | Name   | VPC ID        | VCP CIDR |
 |-------------|:-------------:| -------------:|
