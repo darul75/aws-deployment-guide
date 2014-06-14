@@ -25,6 +25,8 @@ A collection of best practice to deploy with Amazon AWS services.
 - [SSH](#ssh)
 - [Conclusion](#conclusion-1)
 - [Links](#links)
+ - [vpc](#vpc-1)
+ - [load balancing](#load-balancing)
 
 # Amazon services
 
@@ -280,11 +282,18 @@ Hope you will enjoy, that was a big deal for me to understand all that stuff, I 
 
 # Links
 
+## vpc
+
 http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario2.html
 
 What we do:
 
 http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo-vpc-rds.html
+
+## load balancing
+
+http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/TerminologyandKeyConcepts.html#request-routing
+
 
 MongoDB with aws
 
