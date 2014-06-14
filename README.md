@@ -61,7 +61,7 @@ Let's create "Security Groups", use EC2 console view to create it.
 
 Named it like 'vpc-public-sg', where your NAT instance (details later) will be deployed.
 
-AWS will generate a technical ID for it, let's says: sg-11111111
+AWS will generate a technical ID for it, let's say: sg-11111111
 
 ### Inbound rules
 
@@ -79,7 +79,7 @@ AWS will generate a technical ID for it, let's says: sg-11111111
 
 Named it like 'vpc-webserver-sg', where your Beanstalk webservers(application servers)  instances (details later) will be deployed.
 
-AWS will generate a technical ID for it, let's says: sg-22222222
+AWS will generate a technical ID for it, let's say: sg-22222222
 
 ### Inbound rules
 
@@ -100,7 +100,7 @@ where sg-33333333 group policy of DBServer security group, 27017 MongoDB usual p
 
 Named it like 'vpc-dbserver-sg', where your database servers (PostGres, MongoDB, MySQL...)  instances (details later) will be deployed.
 
-AWS will generate a technical ID for it, let's says: sg-33333333
+AWS will generate a technical ID for it, let's say: sg-33333333
 
 ### Inbound rules
 
