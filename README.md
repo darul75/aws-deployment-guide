@@ -124,7 +124,7 @@ where sg-22222222 group policy of WebServer, 27017 MongoDB usual port.
 
 Go to VPC AWS Service zone and create a new one. Wizard will let you create a Public and Private zone with 2 [subnets](http://en.wikipedia.org/wiki/Subnetwork), take inspiration from these tables below, in order to create a third one at the end.
 
-| Name   | VPC ID        | VCP CIDR |
+| Name   | VPC ID        | VPC CIDR |
 |-------------|:-------------:| -------------:|
 | my-vpc   | vpc-44b5252f         | 10.0.0.0/16 |
 
