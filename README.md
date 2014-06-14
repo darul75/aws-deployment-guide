@@ -23,6 +23,8 @@ A collection of best practice to deploy with Amazon AWS services.
  - [Web](#web)
 - [Elastic Beanstalk](#elastic-beanstalk)
 - [SSH](#ssh)
+- [Conclusion](#conclusion)
+- [Links](#links)
 
 # Amazon services
 
@@ -121,7 +123,7 @@ Go to VPC AWS Service zone and create a new one. Wizard will let you create a Pu
 
 | Name   | VPC ID        | VCP CIDR |
 |-------------|:-------------:| -------------:|
-| Beedeez   | vpc-44b5252f         | 10.0.0.0/16 |
+| my-vpc   | vpc-44b5252f         | 10.0.0.0/16 |
 
 ## Subnets
 
@@ -135,8 +137,8 @@ Create 3, for public, webserver, and dbserver zones.
 
 **Details**
 * public: 10.0.0.0/24, Ex: 10.0.0.8 for a NAT instance
-* webserver: 10.0.1.0/24, Ex: 10.0.1.16 for a MONGODB instance (or several for a replicat set)
-* dbserver: 10.0.0.0/24, Ex: 10.0.2.32, 10.0.2.33, 10.0.2.34 for a some NodeJS instances
+* webserver: 10.0.1.0/24, Ex: 10.0.1.16 for a web (NodeJS...) instance(s) 
+* dbserver: 10.0.2.0/24, Ex: 10.0.2.32, 10.0.2.33, 10.0.2.34 for some MongoDB instance(s) (several for a replicat set...)
 
 **Note**: be careful of creating it in same 'Availability zone' first.
 
@@ -151,7 +153,7 @@ Create one for each subnet.
 | 10.0.0.0/16   | local         |
 | 0.0.0.0/0     | igw-78362e1a |
 
-where igw-78362e1a is Internet Gateway id
+where igw-78362e1a is Internet Gateway id, create one if not existing yet.
 
 **WebServer and DBServer**
 
@@ -160,7 +162,7 @@ where igw-78362e1a is Internet Gateway id
 | 10.0.0.0/16   | local         |
 | 0.0.0.0/0     | igw-5bb52530 |
 
-where eni-9a3e8ded is Network Interface (EC2) id, corresponding to NAT instance ENI.
+where eni-9a3e8ded is Network Interface (EC2) id, corresponding to NAT instance ENI. You can specify id of your NAT instance, aws will find network interface for you (ENI).
 
 ### Subnet Associations
 
@@ -210,7 +212,7 @@ When NAT instance is created, be also aware of disabling Source/Destination chec
 ## DB
 
 - Go to EC2 console view
-- Launch instance wizard, use 'Community AMIs' and search for 'MONGO', select one or use your own one. I use some custom home made images sometimes.
+- Launch instance wizard, use 'Community AMIs' and search for 'MONGO, MYSQL...', select one or use your own ones. I use some custom home made images sometimes.
 
 **In Network and Subnet parameters, be careful launch it in your VPC created before and choose your dbserver subnet.**
 
@@ -267,7 +269,7 @@ iptables -A FORWARD -p tcp --dport 22 -s 10.0.2.91 -j ACCEPT
 
 In this example you will connect to some instance in 'dbserver' zone by using port 2222 from your NAT instance.
 
-From your host, this command will connect to 10.0.2.91 instance.
+From your host, this command will connect to 10.0.2.91 instance host in private area zone.
 ```
 ssh -i youpem.pem ec2-user@ip-of-your-nat-instance -p 2222
 ```
@@ -275,7 +277,6 @@ ssh -i youpem.pem ec2-user@ip-of-your-nat-instance -p 2222
 # Conclusion
 
 Hope you will enjoy, that was a big deal for me to understand all that stuff, I wish it will help you.
-
 
 # Links
 
