@@ -285,16 +285,16 @@ Hope you will enjoy, that was a big deal for me to understand all that stuff, I 
 
 ## vpc
 
-http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario2.html
+[http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario2.html](VPC public/private subnets)
 
 What we do:
 
-http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo-vpc-rds.html
+[http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo-vpc-rds.html](VPC public/private subnets for Beanstalk)
 
 ## load balancing
 
-http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/TerminologyandKeyConcepts.html#request-routing
+[http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/TerminologyandKeyConcepts.html#request-routing](Load balancing)
 
 ## mongodb
 
-http://docs.mongodb.org/ecosystem/platforms/amazon-ec2/
+[http://docs.mongodb.org/ecosystem/platforms/amazon-ec2/](MongoDB with EC2 details)
