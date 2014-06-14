@@ -271,7 +271,7 @@ In this example you will connect to some instance in 'dbserver' zone by using po
 
 From your host, this command will connect to 10.0.2.91 instance host in private area zone.
 ```
-ssh -i youpem.pem ec2-user@ip-of-your-nat-instance -p 2222
+ssh -i your-pem.pem ec2-user@ip-of-your-nat-instance -p 2222
 ```
 
 # Conclusion
