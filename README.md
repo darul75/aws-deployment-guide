@@ -97,7 +97,7 @@ AWS will generate a technical ID for it, let's say: sg-22222222
 |-------------|:-------------:| -------------:|
 | TCP   | 27017 | sg-33333333 |
 
-where sg-33333333 group policy of DBServer security group, 27017 MongoDB usual port.
+where `sg-33333333` group policy of DBServer security group, 27017 MongoDB usual port.
 
 ## DBServer
 
@@ -112,7 +112,7 @@ AWS will generate a technical ID for it, let's say: sg-33333333
 | SSH   | 22 | 0.0.0.0/0 |
 | TCP   | 27017 | sg-22222222 |
 
-where sg-22222222 group policy of WebServer, 27017 MongoDB usual port.
+where `sg-22222222` group policy of WebServer, 27017 MongoDB usual port.
 
 ### Outbounds rules
 
@@ -139,9 +139,9 @@ Create 3, for public, webserver, and dbserver zones.
 | subnet-f1c10094 | vpc-44b5252f | 10.0.2.0/24 | 255 |eu-west-1c|
 
 **Details**
-* public: 10.0.0.0/24, Ex: 10.0.0.8 for a NAT instance
-* webserver: 10.0.1.0/24, Ex: 10.0.1.16 for a web (NodeJS...) instance(s) 
-* dbserver: 10.0.2.0/24, Ex: 10.0.2.32, 10.0.2.33, 10.0.2.34 for some MongoDB instance(s) (several for a replicat set...)
+* `public`: CIDR 10.0.0.0/24, Ex: 10.0.0.8 for a NAT instance
+* `webserver`: CIDR 10.0.1.0/24, Ex: 10.0.1.16 for a web (NodeJS...) instance(s) 
+* `dbserver`: CIDR 10.0.2.0/24, Ex: 10.0.2.32, 10.0.2.33, 10.0.2.34 for some MongoDB instance(s) (several for a replicat set...)
 
 **Note**: be careful of creating it in same 'Availability zone' first.
 
@@ -156,7 +156,7 @@ Create one for each subnet.
 | 10.0.0.0/16   | local         |
 | 0.0.0.0/0     | igw-78362e1a |
 
-where igw-78362e1a is Internet Gateway id, create one if not existing yet.
+where `igw-78362e1a` is Internet Gateway id, create one if not existing yet.
 
 **WebServer and DBServer**
 
@@ -165,7 +165,7 @@ where igw-78362e1a is Internet Gateway id, create one if not existing yet.
 | 10.0.0.0/16   | local         |
 | 0.0.0.0/0     | eni-9a3e8ded  |
 
-where eni-9a3e8ded is Network Interface (EC2) id, corresponding to NAT instance ENI. You can specify id of your NAT instance, aws will find network interface for you (ENI).
+where `eni-9a3e8ded` is Network Interface (EC2) id, corresponding to NAT instance ENI. You can specify id of your NAT instance, aws will find network interface for you (ENI).
 
 ### Subnet Associations
 
