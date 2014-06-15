@@ -1,4 +1,4 @@
-aws-deployment-guide
+aws-deployment-guide [![Total views](https://sourcegraph.com/api/repos/github.com/darul75/aws-deployment-guide/counters/views.png)](https://sourcegraph.com/github.com/darul75/aws-deployment-guide)
 ====================
 
 Deploy to Amazon aws on a virtual private cloud with elastic beanstalk
