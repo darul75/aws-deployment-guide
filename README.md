@@ -31,7 +31,7 @@ A collection of best practice to deploy with Amazon AWS services.
 
 # Amazon services
 
-![AWS services](http://darul75.github.io/ng-slider/images/aws-services.png "aws services screenshot")
+![AWS services](http://darul75.github.io/angular-awesome-slider/images/aws-services.png "aws services screenshot")
 
 * `EC2` : virtual machine zones, where your instances are hosted mainly where you will configure everything.
 * `VPC` : virtual private cloud offers a network infrastructure for your instances.
@@ -58,7 +58,7 @@ In following example, the main parts of your infrastructure are:
 
 Let's create "Security Groups", use EC2 console view to create it.
 
-![AWS security groups](http://darul75.github.io/ng-slider/images/aws-security-groups.png "aws security groups screenshot")
+![AWS security groups](http://darul75.github.io/angular-awesome-slider/images/aws-security-groups.png "aws security groups screenshot")
 
 ## Public
 
@@ -210,7 +210,7 @@ Root device type: ebs Virtualization type: paravirtual
 
 When NAT instance is created, be also aware of disabling Source/Destination check.
 
-![AWS nat](http://darul75.github.io/ng-slider/images/aws-nat.png "aws nat screenshot")
+![AWS nat](http://darul75.github.io/angular-awesome-slider/images/aws-nat.png "aws nat screenshot")
 
 ## DB
 
@@ -237,19 +237,19 @@ What beanstalk if waiting for is a simple archive zip, war...whatever depending 
 - Create a new application, give it a name
 - Select environment type, my case is NodeJS
 
-![AWS beanstalk environment](http://darul75.github.io/ng-slider/images/aws-beanstalk-1.png "aws beanstalk environment screenshot")
+![AWS beanstalk environment](http://darul75.github.io/angular-awesome-slider/images/aws-beanstalk-1.png "aws beanstalk environment screenshot")
 
 - Select archive to deploy, my case a zip
 
-![AWS beanstalk archive](http://darul75.github.io/ng-slider/images/aws-beanstalk-2.png "aws beanstalk archive screenshot")
+![AWS beanstalk archive](http://darul75.github.io/angular-awesome-slider/images/aws-beanstalk-2.png "aws beanstalk archive screenshot")
 
 - Select VPC where to deploy
 
-![AWS beanstalk vpc](http://darul75.github.io/ng-slider/images/aws-beanstalk-3.png "aws beanstalk vpc screenshot")
+![AWS beanstalk vpc](http://darul75.github.io/angular-awesome-slider/images/aws-beanstalk-3.png "aws beanstalk vpc screenshot")
 
 - Select zone for load balancer and instance ( EC2 )
 
-![AWS zone archive](http://darul75.github.io/ng-slider/images/aws-beanstalk-4.png "aws beanstalk zone screenshot")
+![AWS zone archive](http://darul75.github.io/angular-awesome-slider/images/aws-beanstalk-4.png "aws beanstalk zone screenshot")
 
 Load balancers have to deployed (in that case of webserver balancing) in public zone.
 EC2 Beanstalk instances have to be deployed in your webserver zone.
